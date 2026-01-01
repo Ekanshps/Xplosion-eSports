@@ -1313,6 +1313,150 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ========================================
+   CONTACT & POLICY PAGES
+   ======================================== */
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-white);
+}
+
+.contact-page {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.contact-details {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-md);
+}
+
+.contact-item i {
+    color: var(--accent-red);
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.social-links h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.social-link {
+    display: block;
+    color: var(--text-grey);
+    text-decoration: none;
+    margin-bottom: var(--spacing-sm);
+    transition: var(--transition-fast);
+}
+
+.social-link:hover {
+    color: var(--accent-red);
+}
+
+.social-link i {
+    margin-right: var(--spacing-sm);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    background: var(--secondary-black);
+    border: 1px solid var(--charcoal);
+    border-radius: 5px;
+    color: var(--text-white);
+    font-family: var(--font-body);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-red);
+}
+
+.policy-page {
+    padding: var(--spacing-xl) 0;
+}
+
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.policy-content h2 {
+    font-size: 1.8rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.policy-content h3 {
+    font-size: 1.4rem;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent-red);
+}
+
+.policy-content p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-grey);
+}
+
+.policy-content ul {
+    margin-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.policy-content li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-grey);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* ========================================
    ACCESSIBILITY
    ======================================== */
 
